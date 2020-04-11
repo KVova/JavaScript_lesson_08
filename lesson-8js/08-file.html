@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lesson number 8</title>
+<style>
+	.menu{
+	margin-top: 10px;
+	}
+	.menu a{
+	text-decoration: none;
+	display: block;
+	padding: 5px 5px;
+	}
+	
+	.dropButton{
+	margin-top: 10px;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	}
+	.dropButton:hover, .dropButton:focus {
+	background-color: white;
+	}
+	.dropDown{
+	position: relative;
+	top: 50px;
+	left: -90px;
+	display: inline-block;
+	}
+	.dropdown-content{
+	display: none;
+	position: absolute;
+	min-width: 90px;
+	z-index: 1;
+	}
+	
+	.dropdown-content a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 3px 5px;
+	}
+	
+	.show{
+	display: block;
+	}
+	
+</style>
+</head>
+<body>
+
+	<div>
+		<p>Different some text for task</p>
+		<p id="text">Some text</p>
+	</div>
+	<button onclick="hideTextFunction()">Press it, if you want hide text</button>
+	
+	<br>
+	<button style="margin-top: 20px; position: relative;" onClick = "hideButtonFunction()" id="hideButton">Press and hide!</button>
+	
+	
+	<div class="dropDown">
+  <button onclick="menuFunction()" class="dropButton">University</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#" >Chair IT</a>
+	<a href="#" >Chair KT</a>
+	<a href="#" >Chair KNIT</a>
+	<a href="#" >Chair IM</a>
+  </div>
+</div>
+	
+	
+	
+	
+	
+	<!-- <div class="menu" id="nav">
+		<div class="main">University
+			<div class="sub">
+		<a href="#" >Chair 1</a>
+		<a href="#" >Chair 2</a>
+		<a href="#" >Chair 3</a>
+		<a href="#" >Chair 4</a>
+			</div>
+		</div>
+	</div> -->
+		
+	
+	<script src="08-file.js"></script>
+</body>
+</html>
